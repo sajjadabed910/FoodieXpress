@@ -56,4 +56,7 @@
     .footer-copyright{
         text-align: center;
     }
+    .footer-content-left{
+        max-width: 65%;
+    }
 }
