@@ -37,6 +37,7 @@
     font-size: 12px;
 }
 
+
 .food-item-price{
     color: tomato;
     font-size: 22px;
@@ -71,3 +72,10 @@
 .food-item-counter .img{
     width: 30px;
 }
+
+.food-item-counter .img :hover{
+    width: 40px;
+    bottom:20px;
+    right: 25px;
+}
+
