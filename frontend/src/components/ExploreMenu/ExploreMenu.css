@@ -41,9 +41,10 @@
     cursor: pointer;
 }
 
-.explore-menu-list-item :hover{
-    width: 100px;
+.explore-menu-list:hover{
     color: black; 
+    transition: 0.5s;
+    animation: fadeIn 0.6s;
 }
 
 .explore-menu hr{
