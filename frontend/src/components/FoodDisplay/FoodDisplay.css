@@ -17,6 +17,5 @@
 
 .food-display-list :hover{
     transition: 0.3s;
-    animation: fadeOut 0.7s;
-    box-shadow: 10px 15px rgb(48, 44, 44);
+    animation: fadeIn 0.7s;
 }
