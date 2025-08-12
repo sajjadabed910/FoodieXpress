@@ -14,3 +14,10 @@
     gap: 30px;
     row-gap: 50px;
 }
+
+.food-display-list :hover{
+    width: 103%;
+    transition: 0.2s;
+    animation: fadeIn 0.7s;
+    overflow: hidden;
+}
