@@ -8,8 +8,9 @@
 }
 
 .food-item-img{
-    width: 100%;
+    width: 97%;
     border-radius: 15px 15px 0px 0px;
+    margin-top: 5px;
 }
 
 .food-item-info{
@@ -46,6 +47,17 @@
 
 .food-item-img-container{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-item-img-container :hover{
+    width: 100%;
+    animation: normal 1s;
+}
+.food-item-img:hover{
+    margin-top: 0px;
 }
 
 .food-item-img-container .add{
