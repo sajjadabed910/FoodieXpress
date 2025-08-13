@@ -7,11 +7,6 @@
     border-radius: 15px;
 }
 
-.header:hover{
-    opacity: 0.8;
-    transition: 0.4s;
-    animation: forwards 0.3s;
-}
 .header-contents{
     position: absolute;
     display: flex;
