@@ -52,12 +52,10 @@
     align-items: center;
 }
 
-.food-item-img-container :hover{
-    width: 100%;
-    animation: normal 1s;
-}
 .food-item-img:hover{
     margin-top: 0px;
+    width: 100%;
+    animation: normal 1s;
 }
 
 .food-item-img-container .add{
