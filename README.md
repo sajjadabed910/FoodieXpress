@@ -62,8 +62,8 @@ The platform offers a seamless and intuitive user experience, with authenticatio
 ```mermaid
 graph TB
     subgraph "Vercel Hosting"
-        C[Customer App<br/>tomato.chahatkesh.me<br/>React + Vite]
-        A[Admin Panel<br/>tomatoadmin.chahatkesh.me<br/>React + Vite]
+        C[Customer App<br/>foodie-xpress-ruddy.vercel.app<br/>React + Vite]
+        A[Admin Panel<br/>foodie-xpress-admin.vercel.app<br/>React + Vite]
     end
     
     subgraph "Backend Services"
@@ -82,11 +82,11 @@ graph TB
     S --> ST
     S --> IMG
     
-    style C fill:#61dafb
-    style A fill:#61dafb
-    style S fill:#68cc68
-    style DB fill:#47a248
-    style ST fill:#635bff
+    style C fill:#1F1D1D
+    style A fill:#260808
+    style S fill:#080926
+    style DB fill:#26081E
+    style ST fill:#082609
 ```
 
 ---
