@@ -238,26 +238,6 @@ The Admin Panel will run on http://localhost:5173
 
 ---
 
-## Development Environment
-```env
-JWT_SECRET=random#secret
-MONGODB_URI=mongodb+srv://sajjadabed910:20701019@cluster0.jhzyvby.mongodb.net/FoodieXpress
-FRONTEND_URL=http://localhost:5173
-PORT=4000
-```
-
-### Client Environment (.env)
-```env
-VITE_SERVER_URL=http://localhost:4000
-```
-
-### Admin Environment (.env)
-```env
-VITE_SERVER_URL=http://localhost:4000
-```
-
----
-
 ## 🎨 UI Components
 
 ### Customer App Components
