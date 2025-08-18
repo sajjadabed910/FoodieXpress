@@ -8,21 +8,38 @@
 .place-order-left{
     width: 100%;
     max-width: max(30%,500px);
+    background: rgba(26, 26, 26, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #333;
 }
 
 .place-order-left .title{
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 50px;
+    color: #ffffff;
 }
 
 .place-order-left input{
     margin-bottom: 15px;
     width: 100%;
     padding: 10px;
-    border: 1px solid #c5c5c5;
-    border-radius: 4px;
-    outline-color: tomato;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.place-order-left input:focus{
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.place-order-left input::placeholder{
+    color: #666;
 }
 
 .place-order-left .multi-fields{
