@@ -1,5 +1,7 @@
 # 🍔 FoodieXpress - Quick and Tasty Food at Your Fingertips
 
+![FoodieXpress Cover](frontend/src/assets/foodiexpresscover.png)
+
 FoodieXpress is a full-stack **MERN** (MongoDB, Express.js, React.js, Node.js) food delivery web application that allows users to select dishes, place orders, and pay securely via **Stripe**.  
 The platform offers a seamless and intuitive user experience, with authentication, image uploads, and secure payment processing.
 
