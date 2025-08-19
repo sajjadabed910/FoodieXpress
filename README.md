@@ -130,7 +130,7 @@ sequenceDiagram
 ## 🗂️ Project Structure
 
 ```
-food-delivery-app/
+FoodieXpress/
 ├── 📁 backend/                # Backend API
 │   ├── 📁 config/             # Database configuration
 │   ├── 📁 controllers/        # Business logic
