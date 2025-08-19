@@ -180,6 +180,9 @@
 }
 
 @media (max-width:750px) {
+    .navbar button{
+        font-size: 10px;
+    }
     .navbar-menu {
         display: none;
         flex-direction: column;
