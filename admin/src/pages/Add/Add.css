@@ -1,44 +1,222 @@
-.add{
-    width: 70%;
-    margin-left: max(5vw ,25px);
-    margin-top: 50px;
-    color: #6d6d6d;
-    font-size: 16px;
+.add {
+  flex: 1;
+  padding: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-primary);
 }
 
-.add form{
-    gap: 20px;
+.add-header {
+  margin-bottom: 32px;
 }
 
-.add-image-upload img{
-    width: 120px;
-
+.add-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
 }
 
-.add-product-name , .add-product-description{
-    width: max(40%,280px);
+.add-subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
 }
 
-.add-product-name input , .add-product-description textarea{
-    padding: 10px;
+.add-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow);
 }
 
-.add-category-price{
-    display: flex;
-    gap: 30px;
+.form-section {
+  margin-bottom: 32px;
 }
 
-.add-category-price select , .add-category-price input{
-    max-width: 120px;
-    padding: 10px;
-
+.form-section:last-child {
+  margin-bottom: 0;
 }
 
-.add-btn{
-    max-width: 280px;
-    border: none;
-    padding: 10px;
-    background-color: tomato;
-    color: white;
-    cursor: pointer;
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: var(--accent-primary);
+  border-radius: 2px;
+}
+
+.add-image-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.upload-area {
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--bg-secondary);
+}
+
+.upload-area:hover {
+  border-color: var(--accent-primary);
+  background: var(--bg-tertiary);
+}
+
+.upload-area.has-image {
+  border-style: solid;
+  border-color: var(--accent-primary);
+  background: var(--bg-tertiary);
+}
+
+.upload-area img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.upload-text {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.upload-hint {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.form-input {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-textarea {
+  width: 100%;
+  max-width: 600px;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.form-select {
+  width: 100%;
+  max-width: 200px;
+}
+
+.submit-section {
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.1);
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .add {
+    padding: 16px;
+  }
+  
+  .add-form {
+    padding: 24px 16px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-select {
+    max-width: 100%;
+  }
+  
+  .upload-area {
+    padding: 24px 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .add {
+    padding-bottom: 100px; /* Account for mobile sidebar */
+  }
 }
