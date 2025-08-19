@@ -57,8 +57,8 @@ const LoginPopup = ({setShowLogin}) => {
         </div>
         <div className="login-popup-inputs">
             {currState==="Login"?<></>:<input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Enter Your Name' required/>}
-            <input name='email' onChange={onChangeHandler} value={data.email} type="email"  placeholder='Enter Your Email' required/>
-            <input name='password' onChange={onChangeHandler} value={data.password} type="password"  placeholder='Password' required/>
+            <input name='email' onChange={onChangeHandler} value={data.email} type="email"  placeholder='example@email.com' required/>
+            <input name='password' onChange={onChangeHandler} value={data.password} type="password"  placeholder='Password(minimum 8 characters)' required/>
         </div>
         <button type='submit'>{currState==="Sign Up"?"Create Account":"Login"}</button>
         <div className="login-popup-condition">

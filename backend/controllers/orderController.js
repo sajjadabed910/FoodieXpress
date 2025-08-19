@@ -11,7 +11,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 const placeOrder = async (req,res) => {
 
-    const frontend_url = "https://foodie-xpress-ruddy.vercel.app";
+    const frontend_url = "https://foodiexpress-frontend.onrender.com";
 
     try {
         const newOrder = new orderModel({
