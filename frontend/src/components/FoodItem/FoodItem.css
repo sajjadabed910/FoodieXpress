@@ -1,20 +1,32 @@
 .food-item{
     width: 100%;
     margin: auto;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px #00000015;
-    transition: 0.3s;
+    border-radius: 20px;
+    background: rgba(26, 26, 26, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
     animation: fadeIn 1s;
+    overflow: hidden;
+}
+
+.food-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 107, 53, 0.2);
+    border-color: #ff6b35;
 }
 
 .food-item-img{
     width: 97%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 16px 16px 0px 0px;
     margin-top: 5px;
+    transition: all 0.3s ease;
 }
 
 .food-item-info{
     padding: 20px;
+    background: rgba(26, 26, 26, 0.9);
 }
 
 .food-item-name-rating{
@@ -27,6 +39,7 @@
 .food-item-name-rating p{
     font-size: 20px;
     font-weight: 500;
+    color: #ffffff;
 }
 
 .food-item-name-rating img{
@@ -34,14 +47,15 @@
 }
 
 .food-item-description{
-    color: #3a3838;
+    color: #b0b0b0;
     font-size: 14px;
+    line-height: 1.5;
 }
 
 .food-item-price{
-    color: tomato;
+    color: #ff6b35;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 10px 0px;
 }
 
@@ -50,12 +64,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
 }
 
 .food-item-img:hover{
     margin-top: 0px;
     width: 100%;
-    animation: normal 1s;
+    transform: scale(1.05);
 }
 
 .food-item-img-container .add{
@@ -65,6 +81,13 @@
     right: 15px;
     cursor: pointer;
     border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.food-item-img-container .add:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
 }
 
 .food-item-counter{
@@ -76,11 +99,26 @@
     gap: 10px;
     padding: 6px;
     border-radius: 50px;
-    background-color: white;
+    background: rgba(26, 26, 26, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid #333;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.food-item-counter p {
+    color: #ffffff;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
 }
 
 .food-item-counter .img{
     width: 30px;
+    transition: all 0.3s ease;
+}
+
+.food-item-counter img:hover{
+    transform: scale(1.1);
 }
 
 

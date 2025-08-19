@@ -7,10 +7,11 @@
     width: 100px;
     height: 100px;
     place-self: center;
-    border: 5px solid #bdbdbd;
-    border-top-color: tomato;
+    border: 5px solid #333;
+    border-top-color: #ff6b35;
     border-radius: 50%;
     animation: rotate 1s infinite;
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
 }
 
 @keyframes rotate{

@@ -2,6 +2,12 @@
     margin: 50px 0px;
 }
 
+.my-orders h2{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
 .my-orders .container{
     display: flex;
     flex-direction: column;
@@ -16,30 +22,49 @@
     gap: 30px;
     font-size: 14px;
     padding: 10px 20px;
-    color: #454545;
-    border: 1px solid tomato;
+    color: #b0b0b0;
+    background: rgba(26, 26, 26, 0.5);
+    border: 1px solid #333;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.my-orders-order:hover{
+    border-color: #ff6b35;
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
+    transform: translateY(-2px);
 }
 
 .my-orders-order img{
     width: 50px;
+    border-radius: 8px;
 }
 
 .my-orders-order p span{
-    color: tomato;
+    color: #ff6b35;
 }
 
 .my-orders-order p b{
     font-weight: 500;
-    color: #454545;
+    color: #ffffff;
 }
 
 .my-orders-order button{
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
     padding: 12px 0px;
-    background-color: tomato;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
     cursor: pointer;
     color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.my-orders-order button:hover{
+    background: linear-gradient(135deg, #f7931e, #ff6b35);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
 }
 
 

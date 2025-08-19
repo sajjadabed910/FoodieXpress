@@ -8,7 +8,7 @@ The platform offers a seamless and intuitive user experience, with authenticatio
 ## 🌐 Live Demo
 
 🚀 **Deployed Applications:**
-- **Customer App**: [foodie-xpress-ruddy.vercel.app](https://foodie-xpress-ruddy.vercel.app/) - Browse and order food
+- **Customer App**: [https://foodiexpress-frontend.onrender.com](https://foodiexpress-frontend.onrender.com) - Browse and order food
 - **Admin Panel**: [foodie-xpress-admin.vercel.app](https://foodie-xpress-admin.vercel.app/) - Manage orders and menu
 - **Backend API**: Deployed on Render - Powers both applications
 
