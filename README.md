@@ -62,7 +62,7 @@ The platform offers a seamless and intuitive user experience, with authenticatio
 ```mermaid
 graph TB
     subgraph "Vercel Hosting"
-        C[Customer App<br/>foodie-xpress-ruddy.vercel.app<br/>React + Vite]
+        C[Customer App<br/>foodiexpress-frontend.onrender.com<br/>React + Vite]
         A[Admin Panel<br/>foodie-xpress-admin.vercel.app<br/>React + Vite]
     end
     
