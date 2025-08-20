@@ -106,7 +106,7 @@ const MyOrders = () => {
 
                                 <div className="order-actions">
                                     <button className="reorder-btn">Reorder</button>
-                                    <button className="track-btn">View Details</button>
+                                    <button className="track-btn">Track Order</button>
                                 </div>
                             </div>
                         )
